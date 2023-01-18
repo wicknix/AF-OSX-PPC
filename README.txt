@@ -1,30 +1,24 @@
-An explanation of the Mozilla Source Code Directory Structure and links to
-project pages with documentation can be found at:
 
-    https://developer.mozilla.org/en/Mozilla_Source_Code_Directory_Structure
+Arctic Fox port for PowerPC OS X Tiger and Leopard made with the help of patches from floodgap systems.
 
-For information on how to build Mozilla from the source code, see:
+This port is not part of mainline Arctic Fox as it uses a slightly older code base.
+It is also thousands of commits behind mainline Arctic Fox.
+This is more of a "proof of concept" that could turn in to something really nice if people join in to help.
 
-    http://developer.mozilla.org/en/docs/Build_Documentation
+To build:
+You will need PowerPC OS X Tiger (10.4.11) or Leopard (10.5.8) and this preconfigured tool kit: 
+https://macintoshgarden.org/apps/the-unofficial-tenfourfox-toolkit
 
-To have your bug fix / feature added to Mozilla, you should create a patch and
-submit it to Bugzilla (https://bugzilla.mozilla.org). Instructions are at:
+Select one of the example mozcfg's and rename it .mozconfig
+Run ./mach build
+Wait a few hours (118 minutes on a dual core 2.3ghz G5 running Tiger)
+After it builds run ./mach run to test your build
 
-    http://developer.mozilla.org/en/docs/Creating_a_patch
-    http://developer.mozilla.org/en/docs/Getting_your_patch_in_the_tree
+Packaging your build:
+Run ./AF-Copy2App.sh /Users/YourName/Desktop/ArcticFox.app
+Now relink your libraries if you plan to share your build
+Run ./AF-Fix-Links.sh
 
-If you have a question about developing Mozilla, and can't find the solution
-on http://developer.mozilla.org, you can try asking your question in a
-mozilla.* Usenet group, or on IRC at irc.mozilla.org. [The Mozilla news groups
-are accessible on Google Groups, or news.mozilla.org with a NNTP reader.]
+Cleaning up after you're done:
+Run ./mach clobber && rm configure
 
-You can download nightly development builds from the Mozilla FTP server.
-Keep in mind that nightly builds, which are used by Mozilla developers for
-testing, may be buggy. Firefox nightlies, for example, can be found at:
-
-    ftp://ftp.mozilla.org/pub/firefox/nightly/latest-trunk/
-            - or -
-    http://nightly.mozilla.org/
-
-
-Arctic Fox port for Tiger and Leopard by wicknix with patches from floodgap systems.
