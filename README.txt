@@ -17,7 +17,7 @@ After it builds run ./mach run to test your build
 Packaging your build:
 Run ./AF-Copy2App.sh /Users/YourName/Desktop/ArcticFox.app
 Now relink your libraries if you plan to share your build
-Run ./AF-Fix-Links.sh
+Run ./AF-Fix-Links.sh /Users/YourName/Desktop/ArcticFox.app
 
 Cleaning up after you're done:
 Run ./mach clobber && rm configure
