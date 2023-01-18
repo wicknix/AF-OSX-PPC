@@ -22,3 +22,4 @@ Run ./AF-Fix-Links.sh /Users/YourName/Desktop/ArcticFox.app
 Cleaning up after you're done:
 Run ./mach clobber && rm configure
 
+![arcticfoxppc](https://forums.macrumors.com/attachments/af-10-5ppc-png.2135294/)
