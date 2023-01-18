@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+
+function boom() {
+  var url = new URL("javascript:void 0;");
+  url.href = "file:////b";
+  url.pathname = "/@@@@@@@@";
+  url.protocol = "https:";
+  url.username = "x";
+  url.hostname = "127.0.0.1";
+}
+
+</script>
+<body onload="boom();">
+</body>
+</html>
