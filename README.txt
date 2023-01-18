@@ -22,4 +22,4 @@ Run ./AF-Fix-Links.sh /Users/YourName/Desktop/ArcticFox.app
 Cleaning up after you're done:
 Run ./mach clobber && rm configure
 
-!(AF-10.5ppc-png)
+!(AF-10.5ppc.png)
