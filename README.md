@@ -1,6 +1,6 @@
 This is a port of the Arctic Fox browser for PowerPC OS X Tiger and Leopard made with patches from Floodgap Systems.
 
-This port is not part of main Arctic Fox. It uses a slightly older code base that made it easier to work with.
+This port is not part of mainline Arctic Fox. It uses a slightly older code base that made it easier to work with.
 It is also thousands of commits behind mainline Arctic Fox and will be missing some features and security updates.
 This is more of a "proof of concept" that could turn in to something really slick if people join in to help out.
 
@@ -8,7 +8,7 @@ This is more of a "proof of concept" that could turn in to something really slic
 
 **To Build:**
 
-You will need PowerPC OS X Tiger (10.4.11) or Leopard (10.5.8) and this preconfigured tool kit:
+You will need PowerPC OS X Tiger (10.4.11) or Leopard (10.5.8) with Xcode installed and this preconfigured tool kit:
 
 https://macintoshgarden.org/apps/the-unofficial-tenfourfox-toolkit
 
