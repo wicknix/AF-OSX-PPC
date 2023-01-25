@@ -5,8 +5,8 @@
 set verbose
 set ppath=$1
 cd $ppath/Contents/MacOS || exit
-ditto /opt/macports-tff/lib/libgcc/libstdc++.6.dylib ./ || ditto /opt/macports-tff/lib/gcc46/libstdc++.6.dylib ./ || exit
-ditto /opt/macports-tff/lib/libgcc/libgcc_s.1.dylib ./ || ditto /opt/macports-tff/lib/gcc46/libgcc_s.1.dylib ./ || exit
+ditto /opt/macports-tff/lib/libgcc/libstdc++.6.dylib ./ || ditto /opt/macports-tff/lib/gcc48/libstdc++.6.dylib ./ || exit
+ditto /opt/macports-tff/lib/libgcc/libgcc_s.1.dylib ./ || ditto /opt/macports-tff/lib/gcc48/libgcc_s.1.dylib ./ || exit
 install_name_tool -id @executable_path/libgcc_s.1.dylib libgcc_s.1.dylib
 install_name_tool -id @executable_path/libstdc++.6.dylib libstdc++.6.dylib
 
@@ -47,7 +47,7 @@ install_name_tool -change /opt/macports-tff/lib/libgcc/libstdc++.6.dylib @execut
 # fix JS
 install_name_tool -change /opt/macports-tff/lib/libgcc/libstdc++.6.dylib @executable_path/libstdc++.6.dylib -change /opt/macports-tff/lib/libgcc/libgcc_s.1.dylib @executable_path/libgcc_s.1.dylib js
 
-# now, in case it was linked against /opt/local/lib/gcc46
+# now, in case it was linked against /opt/local/lib/gcc48
 install_name_tool -change /opt/macports-tff/lib/gcc48/libgcc_s.1.dylib @executable_path/libgcc_s.1.dylib libstdc++.6.dylib
 
 # fix Firefox and xpcshell
