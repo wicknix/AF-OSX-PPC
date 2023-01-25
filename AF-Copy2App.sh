@@ -5,7 +5,7 @@
 set verbose
 set ppath=$1
 #set ppath=$1
-cp -RL obj-ff-dbg/dist/ArcticFox.app $ppath || exit
+cp -RL obj-ff-dbg/dist/ArcticFoxPPC.app $ppath || exit
 cd $ppath/Contents/MacOS || exit
 
 # determine which libgcc got linked (default to /opt/local/lib/gcc46)
