@@ -80,4 +80,4 @@ install_name_tool -change /opt/macports-tff/lib/gcc48/libstdc++.6.dylib @executa
 #install_name_tool -change /opt/local/lib/gcc46/libstdc++.6.dylib @executable_path/libstdc++.6.dylib -change /opt/local/lib/gcc46/libgcc_s.1.dylib @executable_path/libgcc_s.1.dylib libsoundtouch.dylib
 
 # fix JS
-install_name_tool -change /opt/macports-tff/lib/gcc48/libstdc++.6.dylib @executable_path/libstdc++.6.dylib -change /opt/macports-tff/lib/gcc46/libgcc_s.1.dylib @executable_path/libgcc_s.1.dylib js
+install_name_tool -change /opt/macports-tff/lib/gcc48/libstdc++.6.dylib @executable_path/libstdc++.6.dylib -change /opt/macports-tff/lib/gcc48/libgcc_s.1.dylib @executable_path/libgcc_s.1.dylib js
